@@ -1,0 +1,55 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-ajgnl-ajg-native-lands-search {
+  text-align: center;
+
+  // Hide status messages
+  &__error,
+  &__no-results,
+  &__success,
+  &__thanks{
+	display: none;
+  }
+
+  // Add whitespace between result and thanks
+  &__error,
+  &__no-results,
+  &__success{
+	margin-bottom: 1.5rem;
+  }
+
+  &__headline{
+	margin-bottom: 1rem;
+  }
+
+  &__description{
+	font-size: 85%;
+	line-height: 1;
+  }
+
+  &__thanks{
+	font-style: italic;
+	font-size: 50%;
+	margin-top: 0.5rem;
+  }
+
+  &__search{
+
+	input,
+	input[type=text]{
+	  display: block;
+	  margin: 1.1rem auto 0;
+	  max-width: 100%;
+	}
+  }
+
+  &__list{
+	display: inline-block;
+	text-align: left;
+  }
+}

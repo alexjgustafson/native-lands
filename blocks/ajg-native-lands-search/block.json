@@ -1,0 +1,21 @@
+{
+	"apiVersion": 2,
+	"name": "ajgnl/ajg-native-lands-search",
+	"title": "Native Lands Search",
+	"category": "widgets",
+	"icon": "location-alt",
+	"description": "Allow readers to search for a location and see the native lands that encompass it.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "ajg-native-lands-search",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+  	"attributes": {
+	  "blockId": {
+		"type": "string",
+		"default": ""
+	  }
+	}
+}
