@@ -23,16 +23,20 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {WPElement} Element to render.
  */
 export default function save({attributes}) {
-	const { blockId } = attributes;
+	const { blockId, cta, description, headline } = attributes;
 	return (
 		<div { ...useBlockProps.save() }>
 			<div className="wp-block-ajgnl-ajg-native-lands-search__intro">
-				<h4 className="wp-block-ajgnl-ajg-native-lands-search__headline">Are you on unceded indigenous land?</h4>
-				<p className="wp-block-ajgnl-ajg-native-lands-search__description">Enter a street address, town, or zip code to see whose.</p>
+				{headline.length > 0 &&
+					<h4 className="wp-block-ajgnl-ajg-native-lands-search__headline">{headline}</h4>
+				}
+				{description.length > 0 &&
+					<p className="wp-block-ajgnl-ajg-native-lands-search__description">{description}</p>
+				}
 			</div>
 			<form action="javascript:void(0);" className="wp-block-ajgnl-ajg-native-lands-search__search" data-ajgnls-search={blockId}>
 				<input type="text" data-ajgnls-query={blockId} />
-				<input type="submit" value="Tell me." data-ajgnls-submit={blockId} />
+				<input type="submit" value={cta} data-ajgnls-submit={blockId} />
 			</form>
 			<p className="wp-block-ajgnl-ajg-native-lands-search__error">There was a problem searching for that location.<br/><a href="https://native-land.ca" target="_blank" rel="noopener">Learn more -- explore the full map.</a></p>
 			<p className="wp-block-ajgnl-ajg-native-lands-search__no-results">There are no indigenous nations that correspond to that location; results are most likely for folks in the Americans and Oceania.<br/><a href="https://native-land.ca" target="_blank" rel="noopener">Learn more -- explore the full map.</a></p>
