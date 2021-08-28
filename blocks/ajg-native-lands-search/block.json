@@ -16,6 +16,18 @@
 	  "blockId": {
 		"type": "string",
 		"default": ""
+	  },
+	  "headline": {
+		"type": "string",
+		"default": "Are you on unceded indigenous land?"
+	  },
+	  "description": {
+		"type": "string",
+		"default": "Enter a street address, town, or zip code to see whose."
+	  },
+	  "cta": {
+		"type": "string",
+		"default": "Tell me."
 	  }
 	}
 }

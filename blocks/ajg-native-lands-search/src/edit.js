@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, RichText } from '@wordpress/block-editor';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -31,16 +31,34 @@ import './editor.scss';
  */
 export default function Edit(props) {
 	const {attributes, clientId, setAttributes} = props;
-	const {blockId} = attributes;
+	const {blockId, cta, description, headline} = attributes;
 	if(!blockId){
 		setAttributes({blockId: clientId})
 	}
 	return (
-		<p { ...useBlockProps() }>
-			{ __(
-				'Native Lands Search – hello from the editor!',
-				'ajg-native-lands-search'
-			) }
-		</p>
+		<div { ...useBlockProps() }>
+			<div className="wp-block-ajgnl-ajg-native-lands-search__intro">
+				<RichText
+					tagName="h4"
+					value={ headline }
+					onChange={ ( headline ) => setAttributes( { headline } ) }
+				/>
+				<RichText
+					tagName="p"
+					value={ description }
+					onChange={ ( description ) => setAttributes( { description } ) }
+				/>
+			</div>
+			<div className="wp-block-ajgnl-ajg-native-lands-search__search">
+				<input type="text" />
+				<button>
+					<RichText
+						tagName="span"
+						value={ cta }
+						onChange={ ( cta ) => setAttributes( { cta } ) }
+					/>
+				</button>
+			</div>
+		</div>
 	);
 }
