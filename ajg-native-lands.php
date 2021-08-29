@@ -7,7 +7,7 @@ Description: A plugin supplying experiences related to native lands for Pipewren
 Version: 1.0.0
 Author: Alex J. Gustafson Tech, LLC
 Author URI: https://www.alexjgustafson.tech
-License: GPL
+License: GPL v2 or later
 */
 
 namespace Ajg;
