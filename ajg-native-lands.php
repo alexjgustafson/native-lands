@@ -4,7 +4,7 @@
 Plugin Name: Native Lands Search
 Plugin URI: https://github.com/alexjgustafson/native-lands
 Description: A plugin supplying experiences related to native lands for Pipewrench Magazine
-Version: 1.0.0
+Version: 1.1.0
 Author: Alex J. Gustafson Tech, LLC
 Author URI: https://www.alexjgustafson.tech
 License: GPL v2 or later

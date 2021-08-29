@@ -4,7 +4,7 @@
  * Description:       Allow readers to search for a location and see the native lands that encompass it.
  * Requires at least: 5.7
  * Requires PHP:      7.0
- * Version:           0.1.0
+ * Version:           1.1.0
  * Author:            Alex J. Gustafson Tech
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
