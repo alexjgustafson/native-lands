@@ -19,9 +19,6 @@ jQuery(document).ready(function($){
       $('.ajgnl-spinner').remove();
       $('.wp-block-ajgnl-ajg-native-lands-search__intro').hide();
 
-      // Always show the thanks message
-      $('.wp-block-ajgnl-ajg-native-lands-search__thanks').show();
-
       // If error, show the error message
       if(!response.success){
         $('.wp-block-ajgnl-ajg-native-lands-search__error').show();

@@ -45,7 +45,6 @@ export default function save({attributes}) {
 				<ul className="wp-block-ajgnl-ajg-native-lands-search__list"></ul>
 				<p><a href="https://native-land.ca" target="_blank" rel="noopener">Learn more -- explore the full map.</a></p>
 			</div>
-			<p className="wp-block-ajgnl-ajg-native-lands-search__thanks">Thanks to <a href="https://native-land.ca" target="_blank" rel="noopener">Native Land Digital</a> for creating and maintaining the map and API that power this tool.</p>
 		</div>
 	);
 }

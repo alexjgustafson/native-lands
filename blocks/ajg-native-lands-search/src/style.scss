@@ -11,8 +11,7 @@
   // Hide status messages
   &__error,
   &__no-results,
-  &__success,
-  &__thanks{
+  &__success{
 	display: none;
   }
 
@@ -30,12 +29,6 @@
   &__description{
 	font-size: 85%;
 	line-height: 1;
-  }
-
-  &__thanks{
-	font-style: italic;
-	font-size: 50%;
-	margin-top: 0.5rem;
   }
 
   &__search{
