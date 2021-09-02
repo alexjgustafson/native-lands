@@ -1,6 +1,6 @@
 # Native Lands Search
 
-Stable tag: 1.1.2  
+Stable tag: 1.1.3  
 Requires at least: 5.7  
 Tested up to: 5.8  
 Requires PHP: 7.4  
